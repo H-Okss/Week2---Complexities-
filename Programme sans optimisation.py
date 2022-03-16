@@ -12,7 +12,7 @@ with open("Ids.in", 'r') as ids:
             for i in range(int(ids_content[0])+1): #Parcours de la liste ids_content
                 for j in range(int(details_content[0])):  #Parcours de la liste details_content
                     if ids_content[i] == details_content2[j][0]:  #Vérification que les IDs sont identiques
-                        result.append(','.join(details_content2[j]))  # Conversion de la liste details_content2[j] en 
+                        result.append(','.join(details_content2[j]))  # Conversion de la liste details_content2[j] en String
                         result.append("\n")
             results.writelines(result)
   
